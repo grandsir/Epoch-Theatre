@@ -1,0 +1,7 @@
+{
+    "python.linting.enabled": false,
+    "editor.fontSize": 13,
+    "python.linting.pylintArgs": [
+        "--extension-pkg-whitelist=lxml"
+    ]
+}

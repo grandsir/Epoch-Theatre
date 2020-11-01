@@ -1,0 +1,140 @@
+{
+    "main":{
+        "events":[
+        {
+            "event_type": "dialogEvents",
+            "item": "common_dialog1"
+        },
+
+        {
+            "event_type": "dialogEvents",
+            "item": "common_dialog2"
+        },
+
+        {
+            "event_type": "choiceEvents",
+            "item": "choice1241"
+        },
+
+        {
+            "event_type": "dialogEvents",
+            "item": "common_dialog3"
+        }
+        ]
+	},
+	
+    "dialogEvents": {
+        "common_dialog1": {
+            "character": "megami",
+            "emote": "horny",
+            "text": "OH YEAH"
+		},
+		
+        "common_dialog2": {
+            "character": null,
+            "emote": null,
+            "text": "Aynen öyle"
+		},
+		
+        "shina_choice_dialog": {
+			"mainevents": [
+                "dialog1",
+                "dialog2"
+            ],
+	
+            "dialogEvents": {
+                "dialog1": {
+                    "character": "shina",
+                    "emote": "happy",
+                    "text": "Demek öyle"
+				},
+				
+                "dialog2": {
+                    "character": "shina",
+                    "emote": "happy",
+                    "text": "bitti"
+				}
+            }
+        },
+        "megami_choice_dialog": {
+			"mainevents": ["dialog1", "dialog2" ],
+
+            "dialogEvents": {
+                "dialog1": {
+                    "character": "shina",
+                    "emote": "happy",
+                    "text": "Demek öyle"
+				},
+
+                "dialog2": {
+                    "character": "shina",
+                    "emote": "happy",
+                    "text": "bitti"
+                }
+            },
+        	"choiceEvents": {
+            	"choice1": {
+					"question": "kimi seçeceksin",
+				
+                	"options": {
+
+                    	"option1": {
+                        	"text": "ahmet",
+                        	"jump": "ahmet_choice_dialog"
+						},
+					
+                    	"option2": {
+                        	"text": "mahmut",
+                        	"jump": "mahmut_choice_dialog"
+						}
+					},
+			
+                	"critical": false,
+                	"critical-choice-time": 0
+			}
+		}
+	},
+		
+        	"ahmet_choice_dialog": {
+           		"dialog1": {
+                	"character": "ahmet",
+                	"emote": "happy",
+                	"text": "Demek öyle"
+				},
+			
+            "mahmut_choice_dialog": {
+				"dialog1":{
+					"character": "mahmut",
+					"emote": "happy",
+					"text": "bitti"
+					}
+			}
+		},
+		
+        "common_dialog3": {
+            "character": null,
+            "emote": null,
+            "text": "ok"
+        }
+	},
+	
+    "choiceEvents": {
+        "choice1": {
+            "question": "kimi seçeceksin",
+            "options": {
+
+                "option1": {
+                    "text": "shina",
+                    "jump": "shina_choice_dialog"
+				},
+				
+                "option2": {
+                    "text": "megami",
+                    "jump": "megami_choice_dialog"
+                }
+            },
+            "critical": false,
+            "critical-choice-time": 0
+        }
+    }
+}
