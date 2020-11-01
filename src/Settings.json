@@ -1,0 +1,12 @@
+{
+"WIDTH": 1366,
+"HEIGHT": 768,
+
+"FPS": 60,
+"TITLE": "Visual Novel",
+"FONT_NAME": "Arial",
+
+"OPACITY_VALUE": 4,
+"FADE_OPACITY": 0.1,
+"FADE_TIME": 5
+}
