@@ -1,3 +1,3 @@
 # Epoch-Theatre
 
-A Turkish made visual novel/engine which is not developing anymore.
+An unfinished visual novel engine created with Pygame and Python
